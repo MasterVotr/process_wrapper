@@ -1,0 +1,12 @@
+# Local development environment
+.vscode
+
+# Build
+*.gch
+process.hpp.gch
+process_test
+
+# Supporing execs
+tests/util_execs/exit_42
+tests/util_execs/sigint_handler
+tests/util_execs/sleep_forever

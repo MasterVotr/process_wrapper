@@ -1,0 +1,16 @@
+Checks: >
+  bugprone-*,
+  performance-*,
+  # readability-*,
+  # modernize-*,
+  cppcoreguidelines-*
+  readability-function-size,
+  modernize-use-override
+
+WarningsAsErrors: ''
+
+FormatStyle: file
+
+CheckOptions:
+  - key: readability-function-size.LineThreshold
+    value: '70'

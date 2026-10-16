@@ -1,0 +1,31 @@
+# Base style
+BasedOnStyle: Microsoft
+Language: Cpp
+Standard: c++20
+
+# Indentation
+IndentWidth: 4
+TabWidth: 4
+UseTab: false
+AccessModifierOffset: -2
+
+# Line wrapping
+ColumnLimit: 100
+ReflowComments: false
+BreakConstructorInitializers: BeforeComma
+PackConstructorInitializers: Never
+BreakTemplateDeclarations: Yes
+
+# Brace and control statements
+BreakBeforeBraces: Allman
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+
+# Include sorting
+SortIncludes: CaseSensitive
+
+# Pointer and reference alignment
+PointerAlignment: Left
+ReferenceAlignment: Left
+
