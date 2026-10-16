@@ -7,7 +7,7 @@
 #include <csignal>    // kill
 #include <cstdint>    // uint8_t
 #include <ctime>      // pid_t
-#include <fcntl.h>    // O_CLOEXEC
+#include <fcntl.h>    // F_SETFD, FD_CLOEXEC
 #include <filesystem> // path
 #include <optional>
 #include <string>
@@ -15,7 +15,7 @@
 #include <sys/wait.h>  // waitpid
 #include <thread>
 #include <unistd.h> // fork, pipe2
-#include <utility>
+#include <utility>  // move
 #include <vector>
 
 namespace process
