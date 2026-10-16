@@ -45,7 +45,7 @@ class Process
     enum class State : uint8_t
     {
         NotStarted, //* Process has not been started.
-        Running,    //* Process is runing.
+        Running,    //* Process is running.
         Failed,     //* Process has failed to start or an unexpected error occured.
         Exited,     //* Process has terminated. Its exit status is available.
     };
@@ -110,7 +110,7 @@ class Process
 
     /**
      * @brief Sends SIGKILL to the child process.
-     * "DIE THE BITCH!"
+     * "KILL THE BITCH!"
      */
     void stop();
 
@@ -376,7 +376,7 @@ inline Process::State Process::state() const
     return state_;
 }
 
-void Process::startChild(const std::array<int, 2>& pipeFd)
+inline void Process::startChild(const std::array<int, 2>& pipeFd)
 {
     // Close read pipe, the child does not need it
     close(pipeFd[0]);
