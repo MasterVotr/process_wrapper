@@ -28,4 +28,4 @@
 - Braces              BSD/Allman
 - Line limit          100 columns
 - Function limit      70 lines
-- C++ standard        C++20
+- C++ standard        C++17

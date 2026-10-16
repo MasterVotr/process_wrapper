@@ -1,8 +1,14 @@
 # Process
 
-A lightweight, header-only C++20 process management utility for Linux.
+A lightweight, header-only process management utility for Linux.
 
 Designed primarily for integration and system testing. The library provides a simple RAII wrapper around `fork()`, `execv()`, `waitpid()`, and POSIX signals.
+
+## Licence
+
+This project is licensed under the MIT License.
+
+See LICENCE file for details.
 
 ## Features
 
@@ -19,7 +25,8 @@ Designed primarily for integration and system testing. The library provides a si
 ## Dependencies
 
 - POSIX process APIs
-- C++20 compiler
+- C++17 compiler
+- Catch2 (for tests)
 
 ## Potential Extensions
 

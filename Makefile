@@ -1,5 +1,5 @@
 CXX      := g++
-CXXFLAGS := -std=c++20 -I. -Wall -pedantic -Wextra -Werror
+CXXFLAGS := -std=c++17 -I. -Wall -pedantic -Wextra -Werror
 LDLIBS   := -pthread -lCatch2Main -lCatch2
 
 UTIL_EXES := \
@@ -21,10 +21,10 @@ format:
 	clang-format -i process.hpp tests/process.t.cpp
 
 tidy:
-	clang-tidy process.hpp tests/process.t.cpp -- -std=c++20 -I.
+	clang-tidy process.hpp tests/process.t.cpp -- -std=c++17 -I.
 
 process_test: tests/process.t.cpp $(UTIL_EXES)
 	$(CXX) $(CXXFLAGS) $< -o $@ $(LDLIBS)
 
 tests/util_execs/%: tests/util_execs/%.cpp
-	$(CXX) -std=c++20 $< -o $@
+	$(CXX) -std=c++17 $< -o $@

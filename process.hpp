@@ -1,5 +1,14 @@
 #pragma once
 
+/**
+ * Copyright (c) 2026 Jakub Votrubec
+ * Licensed under the MIT License.
+ *
+ * Author: Jakub Votrubec
+ *
+ * @about Lightweight process management utility for Linux.
+ */
+
 #include <array>
 #include <cassert>
 #include <cerrno>
@@ -20,6 +29,8 @@
 
 namespace process
 {
+
+inline constexpr auto kVersion = "1.0.0";
 
 /**
  * @brief Lightweight process management utility for testing and integration
